@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeloPlus</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .header {
+        background: #111;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo img {
+        height: 50px;
+      }
+      .nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+      }
+      .nav ul li {
+        margin-right: 20px;
+      }
+      .nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px 30px;
+      }
+      .btn {
+        background: #007bff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .hero {
+        background: url("biciclist.jpg") no-repeat center center/cover;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      .hero h1::after {
+    content: "";
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+      .content {
+        padding: 40px 0;
+       
+      }
+      .content img {
+        width: 100%;
+        max-width: 800px;
+        display: block;
+        margin: 20px auto;
+      }
+      .related {
+        background: #222;
+        padding: 40px 0;
+      }
+      .related-articles {
+        display: flex;
+        justify-content: space-between;
+      }
+      .related-articles article {
+        width: 30%;
+        text-align: center;
+      }
+      .related-articles img {
+        width: 100%;
+      }
+      footer {
+        background: #111;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="logo.jpg" alt="VeloPlus" />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Biciclete</a></li>
+            <li><a href="#">Piese Bicicletă</a></li>
+            <li><a href="#">Accesorii Bicicletă</a></li>
+            <li><a href="#">Echipamente</a></li>
+            <li><a href="#" class="btn">Oferte</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>TITLU BLOG POST</h1>
+          <p>Scris de Tudor Popa în 19.08.2016</p>
+        </div>
+      </section>
+
+      <section class="content container">
+        <h2 class="content__title">Heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate rerum, facilis nesciunt quis eveniet at reprehenderit, eaque exercitationem recusandae, ducimus fuga? Fugit quidem nisi laborum qui impedit, reiciendis sunt!
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum impedit enim ut, voluptates quidem ducimus reiciendis, cupiditate suscipit aspernatur vel neque. Alias esse quos culpa minus quae facere autem pariatur.
+        </p>
+        <blockquote class="content__quote quote">
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, alias."
+          <cite class="quote__author">John Doe</cite>
+        </blockquote>
+
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit earum debitis consequuntur similique asperiores veritatis quia, atque minima? Eos officia, quisquam ab perferendis id eaque delectus quod nam eum.
+      </p>
+        <img src="fata-blonda.jpg" alt="Imagine blog" />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero eaque veniam quibusdam, vel nulla ullam itaque maxime, doloribus aliquid quia tempora ducimus, ratione alias. Possimus iusto aut inventore quo doloribus.
+        </p>
+    </div>
+  </article>
+
+      </section>
+
+      <section class="related container">
+        <h3>Alte articole relevante</h3>
+        <div class="related-articles">
+          <article>
+            <img src="bicic2.jpg" alt="Biciclist în acțiune" />
+            <h4>Titlu articol sportiv</h4>
+          </article>
+          <article>
+            <img src="img-gri.jpg" alt="Articol 2" />
+            <h4>Alt titlu articol sportiv</h4>
+          </article>
+          <article>
+            <img src="lant.jpg" alt="Articol 3" />
+            <h4>Încă un titlu articol sportiv</h4>
+          </article>
+        </div>
+        <a href="#" class="btn">Vezi toate articolele</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright VeloPlus 2016</p>
+      </div>
+    </footer>
+  </body>
+</html>
